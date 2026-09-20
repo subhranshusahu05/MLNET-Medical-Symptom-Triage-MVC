@@ -1,0 +1,19 @@
+TESTING NEW DATA
+
+
+// Level 1 — Hard
+  My knee hurts and there is also swelling    , "orthopedic")
+    ("Ear pain with fever and sore throat    , "ent")
+  // Level 2 — Very Hard
+
+
+ Chest tightness after eating spicy food    , "gastroenterologist"),
+
+
+  // Level 3 — Extreme
+    ("I have pain", "general_physician"),
+    ("My head hurts", "neurologist"),
+ 
+
+I have been feeling very tired for two weeks with mild fever in the evenings, loss of appetite, and occasional body aches. I also feel dizzy when I stand up quickly.", "general_physician"),
+

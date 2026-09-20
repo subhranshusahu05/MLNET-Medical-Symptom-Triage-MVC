@@ -1,0 +1,78 @@
+﻿@model MedicalSymptomTriage.Models.SymptomInputModel
+
+@{
+    ViewData["Title"] = "Medical Symptom Triage";
+}
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold">
+                    Medical Symptom Triage
+                </h1>
+
+                <p class="lead text-muted">
+                    Describe your symptoms and the ML.NET model will
+                    suggest an appropriate specialist category.
+                </p>
+            </div>
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body p-4 p-md-5">
+
+                    <form asp-controller="Home"
+                          asp-action="Predict"
+                          method="post">
+
+                        <div class="mb-4">
+
+                            <label asp-for="Content"
+                                   class="form-label fw-semibold">
+                                Describe Your Symptoms
+                            </label>
+
+                            <textarea asp-for="Content"
+                                      class="form-control"
+                                      rows="6"
+                                      placeholder="Example: I have severe chest pain and difficulty breathing..."></textarea>
+
+                            <span asp-validation-for="Content"
+                                  class="text-danger">
+                            </span>
+
+                        </div>
+
+                        <div class="d-grid">
+
+                            <button type="submit"
+                                    class="btn btn-primary btn-lg">
+                                Analyze Symptoms
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="alert alert-warning mt-4">
+
+                <strong>Educational Purpose:</strong>
+                This application is an ML.NET demonstration project.
+                It does not provide a medical diagnosis or replace
+                professional medical advice.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
